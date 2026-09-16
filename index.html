@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#073e49">
+  <title>Te Ara Tukutuku · Kelp restoration</title>
+  <link rel="icon" href="assets/images/waves.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/screens.css">
+</head>
+<body>
+  <main id="stage">
+    <div class="brand" aria-label="Te Ara Tukutuku">
+      <img src="assets/images/waves.svg" alt="" width="80" height="62">
+      <div>TE ARA<br>TUKUTUKU</div>
+    </div>
+    <div class="project-label"><span class="label-dot"></span><span data-i18n="project.theme"></span></div>
+
+    <section class="screen home-screen" data-screen="home" aria-labelledby="home-title">
+      <img class="home-backdrop" data-media="hero" alt="" width="1920" height="1080">
+      <div class="home-shade"></div>
+      <header class="home-heading">
+        <p class="eyebrow" data-i18n="home.location"></p>
+        <h1 id="home-title" tabindex="-1" data-i18n="home.title"></h1>
+        <p class="home-subtitle" data-i18n="home.subtitle"></p>
+      </header>
+      <nav class="home-cards" data-i18n-aria="home.navigation">
+        <button class="entry-card play-card" data-go="play">
+          <span class="card-art"><img data-media="play" alt="" width="540" height="270"><span class="card-tag" data-i18n="home.play.tag"></span></span>
+          <span class="card-copy"><span class="card-title" data-i18n="home.play.title"></span><span class="card-subtitle" data-i18n="home.play.sub"></span><span class="circle-arrow" aria-hidden="true">↗</span></span>
+        </button>
+        <button class="entry-card learn-card" data-go="learn">
+          <span class="card-art"><img data-media="kelp" alt="" width="540" height="270"><span class="card-tag" data-i18n="home.learn.tag"></span></span>
+          <span class="card-copy"><span class="card-title" data-i18n="home.learn.title"></span><span class="card-subtitle" data-i18n="home.learn.sub"></span><span class="circle-arrow" aria-hidden="true">↗</span></span>
+        </button>
+        <button class="entry-card map-card" data-go="map">
+          <span class="card-art"><img data-media="map" alt="" width="540" height="270"><span class="card-tag" data-i18n="home.map.tag"></span></span>
+          <span class="card-copy"><span class="card-title" data-i18n="home.map.title"></span><span class="card-subtitle" data-i18n="home.map.sub"></span><span class="circle-arrow" aria-hidden="true">↗</span></span>
+        </button>
+      </nav>
+      <p class="home-invitation"><span class="touch-symbol" aria-hidden="true">✦</span><span data-i18n="home.hint"></span></p>
+    </section>
+
+    <section class="screen inner-screen play-screen" data-screen="play" aria-labelledby="play-title" hidden>
+      <div class="inner-heading"><p class="eyebrow" data-i18n="play.eyebrow"></p><h1 id="play-title" tabindex="-1" data-i18n="play.title"></h1><p data-i18n="play.subtitle"></p></div>
+      <div class="play-preview">
+        <figure class="feature-art"><img data-media="play" data-i18n-alt="play.image.alt" width="830" height="530"><figcaption data-i18n="common.illustration"></figcaption></figure>
+        <div class="preview-copy">
+          <span class="preview-label" data-i18n="common.preview"></span>
+          <h2 data-i18n="play.preview.title"></h2>
+          <p data-i18n="play.preview.body"></p>
+          <div class="preview-item"><span class="item-number" aria-hidden="true">01</span><div><strong data-i18n="play.story"></strong><span data-i18n="play.story.sub"></span></div></div>
+          <div class="preview-item"><span class="item-number" aria-hidden="true">02</span><div><strong data-i18n="play.find"></strong><span data-i18n="play.find.sub"></span></div></div>
+          <p class="companion-note" data-i18n="play.companion"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen inner-screen learn-screen" data-screen="learn" aria-labelledby="learn-title" hidden>
+      <div class="inner-heading"><p class="eyebrow" data-i18n="learn.eyebrow"></p><h1 id="learn-title" tabindex="-1" data-i18n="learn.title"></h1><p data-i18n="learn.subtitle"></p></div>
+      <div class="learn-preview">
+        <figure class="feature-art"><img data-media="kelp" data-i18n-alt="learn.image.alt" width="830" height="530"><figcaption data-i18n="common.illustration"></figcaption></figure>
+        <div class="preview-copy">
+          <span class="preview-label" data-i18n="common.preview"></span>
+          <h2 data-i18n="learn.preview.title"></h2>
+          <p data-i18n="learn.preview.body"></p>
+          <div class="preview-item"><span class="item-number" aria-hidden="true">01</span><div><strong data-i18n="learn.story"></strong><span data-i18n="learn.story.sub"></span></div></div>
+          <div class="preview-item"><span class="item-number" aria-hidden="true">02</span><div><strong data-i18n="learn.species"></strong><span data-i18n="learn.species.sub"></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen inner-screen map-screen" data-screen="map" aria-labelledby="map-title" hidden>
+      <div class="inner-heading"><p class="eyebrow" data-i18n="map.eyebrow"></p><h1 id="map-title" tabindex="-1" data-i18n="map.title"></h1><p data-i18n="map.subtitle"></p></div>
+      <div class="map-preview">
+        <figure class="feature-art map-illustration"><img data-media="map" data-i18n-alt="map.image.alt" width="830" height="530"><figcaption data-i18n="map.disclaimer"></figcaption></figure>
+        <div class="preview-copy">
+          <span class="preview-label" data-i18n="common.preview"></span>
+          <h2 data-i18n="map.preview.title"></h2>
+          <p data-i18n="map.preview.body"></p>
+          <div class="map-note"><span class="map-pin-icon" aria-hidden="true">⌖</span><div><strong>Te Ara Tukutuku</strong><span>Wynyard Point · Tāmaki Makaurau</span></div></div>
+          <p class="map-disclaimer" data-i18n="map.note"></p>
+        </div>
+      </div>
+    </section>
+
+    <button id="back-button" class="utility-button back-button" data-action="back" hidden><span aria-hidden="true">←</span><span data-i18n="common.back"></span></button>
+    <footer class="bottom-bar">
+      <div class="footer-start"><button id="home-button" class="utility-button" data-action="home" hidden><span class="home-icon" aria-hidden="true">⌂</span><span data-i18n="common.home"></span></button><span id="welcome-note" class="welcome-note" data-i18n="common.everyone"></span></div>
+      <p class="prototype-note" data-i18n="common.prototype"></p>
+      <div class="language-switch" role="group" data-i18n-aria="common.language"><span class="language-icon" aria-hidden="true">◎</span><button data-lang="en" lang="en" aria-pressed="true">EN</button><span class="language-divider" aria-hidden="true"></span><button data-lang="zh" lang="zh-Hans" aria-pressed="false">中文</button></div>
+    </footer>
+  </main>
+  <noscript>This exhibit needs JavaScript enabled. 此展示需要启用 JavaScript。</noscript>
+  <script src="data/ui-text.js"></script>
+  <script src="data/species.js"></script>
+  <script src="data/story.js"></script>
+  <script src="data/map.js"></script>
+  <script src="js/stage.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/idle.js"></script>
+  <script src="js/screens/attract.js"></script>
+  <script src="js/screens/home.js"></script>
+  <script src="js/screens/map.js"></script>
+  <script src="js/screens/species.js"></script>
+  <script src="js/screens/story.js"></script>
+  <script src="js/screens/games.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
